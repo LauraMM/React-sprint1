@@ -68,12 +68,52 @@ aside{
 aside div{
     background-color: yellow;
     padding:10px;
-    margin-bottom:20px;
+
 }
-   
+aside div:first-child{
+    margin-bottom:20px;
+
+}
 footer{    
     background-color:#000000;
     padding:20px;
 
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    main {
+        background-color: yellow;
+        padding: 20px;
+    grid-template-areas:
+    "article article article"
+    "aside aside aside";
+        
+    }
+    
+  }
+  
+
+  @media (min-width: 320px) and (max-width: 767px){
+  
+    .main-head{
+    
+        flex-direction: column; 
+       
+    }
+    article div {
+        background-color: #0062a9;
+        width: 100%;
+        padding: 10px;
+    }
+    aside{background-color: #ff6923;}
+
+    main {
+        background-color: yellow;
+        padding: 20px;
+    grid-template-areas:
+    "article article article"
+    "aside aside aside";
+        
+    }
+  }
